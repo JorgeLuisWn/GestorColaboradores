@@ -18,6 +18,23 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { ColaboradorComponent } from './colaborador/colaborador.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { FormsModule } from '@angular/forms';
+import{RouterModule, Routes} from '@angular/router';
+
+const routes: Routes=[
+  {
+    path:'',
+  },
+  {
+    path:'Iniciativas',
+  },
+  {
+    path:'',
+  },
+  {
+    path:'',
+  },
+];
 
 @NgModule({
   declarations: [
@@ -40,7 +57,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

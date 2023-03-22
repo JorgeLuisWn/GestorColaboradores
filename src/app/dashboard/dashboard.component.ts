@@ -28,6 +28,12 @@ export class DashboardComponent {
       ];
     })
   );
+iniciativa={
+  Tiniciativa: '',
+  Cnegocio:'',
+  Finiciativa:'',
+  Iestrategica:''
+};
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 }
