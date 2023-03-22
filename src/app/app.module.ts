@@ -20,20 +20,22 @@ import { ColaboradorComponent } from './colaborador/colaborador.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
 import{RouterModule, Routes} from '@angular/router';
+import { AsignacionesComponent } from './asignaciones/asignaciones.component';
 
 const routes: Routes=[
   {
     path:'',
+    component: DashboardComponent
   },
   {
-    path:'Iniciativas',
+    path:'colaborador',
+    component: ColaboradorComponent 
   },
   {
-    path:'',
+    path:'asignaciones',
+    component: AsignacionesComponent 
   },
-  {
-    path:'',
-  },
+
 ];
 
 @NgModule({
@@ -43,7 +45,8 @@ const routes: Routes=[
     LateralComponent,
     NavigationComponent,
     DashboardComponent,
-    ColaboradorComponent
+    ColaboradorComponent,
+    AsignacionesComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ const routes: Routes=[
     MatCardModule,
     MatMenuModule,
     NgxPaginationModule,
-    FormsModule
+    RouterModule.forRoot(routes)
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
