@@ -1,0 +1,26 @@
+/* Estilos de encabezado */
+#encabezado_iniciativas {
+  width: 100%;
+  height: 60px;
+  background-color: #376a99;
+  color: white;
+  display: flex;
+  align-content: center;
+}
+
+h2 {
+  text-align: right;
+  width: 100%;
+}
+
+#encIni1 {
+  display: grid;
+  width: 33%;
+}
+
+#img_coppel{
+  width: 25%;
+
+  margin-left: 5%;
+}
+
