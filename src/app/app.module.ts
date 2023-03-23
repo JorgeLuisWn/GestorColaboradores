@@ -23,6 +23,14 @@ import{RouterModule, Routes} from '@angular/router';
 import { AsignacionesComponent } from './asignaciones/asignaciones.component';
 import { ActividadesComponent } from './actividades/actividades.component';
 
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { TableAsignacionesComponent } from './table-asignaciones/table-asignaciones.component';
+import { TableColaboradoresComponent } from './table-colaboradores/table-colaboradores.component';
+import { TableIniciativasComponent } from './table-iniciativas/table-iniciativas.component';
+
+
 const routes: Routes=[
   {
     path:'',
@@ -40,6 +48,19 @@ const routes: Routes=[
     path:'actividades',
     component: ActividadesComponent 
   },
+  {
+    path:'Tasignaciones',
+    component: TableAsignacionesComponent
+  },
+  {
+    path:'Tcolaboradores',
+    component: TableColaboradoresComponent
+  },
+  {
+    path:'Tiniciativas',
+    component: TableIniciativasComponent
+  },
+ 
 
 ];
 
@@ -52,7 +73,11 @@ const routes: Routes=[
     DashboardComponent,
     ColaboradorComponent,
     AsignacionesComponent,
-    ActividadesComponent
+    ActividadesComponent,
+    TableAsignacionesComponent,
+    TableColaboradoresComponent,
+    TableIniciativasComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -67,7 +92,10 @@ const routes: Routes=[
     MatCardModule,
     MatMenuModule,
     NgxPaginationModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
     
   ],
   providers: [],
