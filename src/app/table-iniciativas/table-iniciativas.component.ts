@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-table-iniciativas',
   templateUrl: './table-iniciativas.component.html',
+ 
   styleUrls: ['./table-iniciativas.component.css']
+ 
+  
 })
 export class TableIniciativasComponent {
   /** Based on the screen size, switch from standard to one column per row */
