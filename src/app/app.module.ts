@@ -34,6 +34,7 @@ import { TableIniciativasComponent } from './table-iniciativas/table-iniciativas
 import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { IniciativasComponent } from './iniciativas/iniciativas.component';
 
 
 const routes: Routes=[
@@ -65,6 +66,10 @@ const routes: Routes=[
     path:'Tiniciativas',
     component: TableIniciativasComponent
   },
+  {
+    path:'iniciativas',
+    component: IniciativasComponent
+  }
  
 
 ];
@@ -83,6 +88,7 @@ const routes: Routes=[
     TableAsignacionesComponent,
     TableColaboradoresComponent,
     TableIniciativasComponent,
+    IniciativasComponent,
    
   ],
   imports: [

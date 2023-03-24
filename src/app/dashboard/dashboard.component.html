@@ -1,121 +1,84 @@
-
 <div class="grid-container">
- 
-  <span >FORMULARIO DE INICIATIVA</span>
-  <mat-grid-list cols="1" rowHeight="800px">
-    <mat-grid-tile >
+  <h1 class="mat-h1">Tabla Colaboradores</h1>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      
+      
       <mat-card class="dashboard-card">
-      
-      
-          <div>
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    REGISTRO
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Titulo iniciativa</label>
-                        <input type="input" class="form-control" name="Tiniciativa" id="Tiniciativa" aria-describedby="Tiniciativa">
-                      </div>
-                      <div class="mb-3">
-                        <label for="Cnegocio" class="form-label">Comentario de negocio</label>
-                        <input type="input" class="form-control" name="Cnegocio" id="Cnegocio">
-                      </div>
-                      <div class="mb-3">
-                        <label for="Cnegocio" class="form-label">Folio iniciativa asociada</label>
-                        <input type="input" class="form-control" name="Finiciativa" id="Finiciativa">
-                      </div>
-                      <div class="mb-3">
-                        <label for="Cnegocio" class="form-label">Iniciativa estrategica</label>
-                        <input type="input" class="form-control" name="Iestrategica" id="Iestrategica">
-                      </div>
-                  
-                      <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    FECHAS
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Fecha de registro</label>
-                        <input type="date" class="form-control" name="Fregistro" id="Fregistro" aria-describedby="Fregistro">
-                      </div>
-                      <div class="mb-3">
-                        <label for="Cnegocio" class="form-label">Fecha de asignacion</label>
-                        <input type="date" class="form-control" name="Fasignacion" id="Fasignacion">
-                      </div>
-                      <div class="mb-3">
-                        <label for="Cnegocio" class="form-label">Fecha inicio</label>
-                        <input type="date" class="form-control" name="Finicio" id="Finicio">
-                      </div>
-                      <div class="mb-3">
-                        <label for="Cnegocio" class="form-label">Fecha estimada</label>
-                        <input type="date" class="form-control" name="Festimada" id="Festimada">
-                      </div>
-                      <div class="mb-3">
-                        <label for="Cnegocio" class="form-label">Fecha fin</label>
-                        <input type="date" class="form-control" name="Ffin" id="Ffin">
-                      </div>
-                  
-                      <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    DESCRIPCION
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="Descripcion" class="form-label">Descripción</label>
-                        <input type="input" class="form-control" name="Descripcion" id="Descripcion" aria-describedby="Descripcion">
-                      </div>
-                      <div class="mb-3">
-                        <label for="Moperativo" class="form-label">Modelo operativo</label>
-                        <input type="input" class="form-control" name="Moperativo" id="Moperativo">
-                      </div>
-                      <div class="mb-3">
-                        <label for="Casignacion" class="form-label">Comentario de asignacion</label>
-                        <input type="input" class="form-control" name="Casignacion" id="Casignacion">
-                      </div>
-                      <div class="mb-3">
-                        <label for="Pavance" class="form-label">Porcentaje de avance</label>
-                        <input type="input" class="form-control" name="Pavance" id="Pavance">
-                      </div>
-                     
-                  
-                      <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
 
-          </div>
+    <!--  <input type="search" style="width: 20%;" > <i class="bi bi-search"></i>-->  
+
+
+        <table class="table">
+          <thead>
+            <tr >
+              <th scope="col">#</th>
+              <th scope="col">ID</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Porcentaje</th>
+              <th scope="col"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <th scope="row">1</th>
+              <td>001</td>
+              <td>INICIATIVA GESTOR</td>
+              <td>" "</td>
+              <td>90%</td>
+            </tr>
+          
+            <tr>
+              <th scope="row">2</th>
+              <td>002</td>
+              <td>INICIATIVA GESTOR</td>
+              <td>" "</td>
+              <td>70%</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>003</td>
+              <td>INICIATIVA GESTOR</td>
+              <td>" "</td>
+              <td>80%</td>
+            </tr>
+          </tbody>
+
+
+
+        </table>
+        <!-- Button trigger modal -->
 
      
+        
+        <!-- Modal -->
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">INICIATIVAS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
-</div>
 
+
+</div>
