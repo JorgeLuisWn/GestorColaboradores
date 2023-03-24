@@ -19,6 +19,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ColaboradorComponent } from './colaborador/colaborador.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+
 import{RouterModule, Routes} from '@angular/router';
 import { AsignacionesComponent } from './asignaciones/asignaciones.component';
 import { ActividadesComponent } from './actividades/actividades.component';
@@ -29,6 +31,9 @@ import { MatSortModule } from '@angular/material/sort';
 import { TableAsignacionesComponent } from './table-asignaciones/table-asignaciones.component';
 import { TableColaboradoresComponent } from './table-colaboradores/table-colaboradores.component';
 import { TableIniciativasComponent } from './table-iniciativas/table-iniciativas.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 
 const routes: Routes=[
@@ -64,6 +69,7 @@ const routes: Routes=[
 
 ];
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -95,7 +101,9 @@ const routes: Routes=[
     RouterModule.forRoot(routes),
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    TooltipModule.forRoot(),
+    ModalModule.forRoot(),
     
   ],
   providers: [],
