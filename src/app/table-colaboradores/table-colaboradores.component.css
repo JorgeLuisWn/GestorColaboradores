@@ -19,3 +19,14 @@
 .dashboard-card-content {
   text-align: center;
 }
+#search{
+  border-radius: 20px;
+}
+#buscar{
+ position: -ms-page;
+}
+.input-container i {
+  position: absolute;
+
+  transform: translateY(10%) translateX(-150%);
+}
