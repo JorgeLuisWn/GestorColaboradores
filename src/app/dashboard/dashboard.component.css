@@ -19,3 +19,44 @@
 .dashboard-card-content {
   text-align: center;
 }
+#btn-agregar{
+ 
+  margin: 1%;
+ 
+}
+.select1{
+  margin: 1%;
+ 
+}
+#search{
+  border-radius: 20px;
+}
+#buscar{
+ position: -ms-page;
+}
+.input-container {
+  position: relative;
+}
+
+.input-container input[type="text"] {
+  padding-left: 30px; /* Espacio para el icono */
+}
+
+.input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) translateX(1300%);
+}
+select {
+  padding: 9px 20px;
+  border-radius: 8px;
+  border: 1px black;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+select:focus {
+  outline: none;
+}
+
