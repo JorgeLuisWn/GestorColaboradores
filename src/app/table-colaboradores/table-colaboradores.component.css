@@ -27,6 +27,13 @@
 }
 .input-container i {
   position: absolute;
-
+ 
   transform: translateY(10%) translateX(-150%);
+}
+.input-container {
+  position: relative;
+}
+
+.input-container input[type="text"] {
+  padding-left: 30px; /* Espacio para el icono */
 }

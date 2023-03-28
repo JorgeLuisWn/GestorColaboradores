@@ -20,7 +20,7 @@
                 <thead>
                   <tr>
                     <th style="width: 10px">#</th>
-                    <th>Task</th>
+                    <th>NOMBRE INICIATIVA</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -46,11 +46,11 @@
             <!-- /.card-body -->
             <div class="card-footer clearfix">
               <ul class="pagination pagination-sm m-0 float-right">
-                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                <li class="page-item"><a class="page-link" href="Tasignaciones">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="Tasignaciones">1</a></li>
+                <li class="page-item"><a class="page-link" href="Tasignaciones">2</a></li>
+                <li class="page-item"><a class="page-link" href="Tasignaciones">3</a></li>
+                <li class="page-item"><a class="page-link" href="Tasignaciones">&raquo;</a></li>
               </ul>
             </div>
           </div>
@@ -67,7 +67,7 @@
                 <thead>
                   <tr>
                     <th style="width: 10px">#</th>
-                    <th>Task</th>
+                    <th>NOMBRE COLABORADOR</th>
                   
                     
                   </tr>
@@ -75,39 +75,34 @@
                 <tbody>
                   <tr>
                     <td>1.</td>
-                    <td>Update software <i class="bi bi-info-circle-fill"></i></td>
+                    <td class="d-flex ">Update software <i class="bi bi-info-circle-fill  ms-auto p-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></td>
                   
                     
                   </tr>
                   <tr>
                     <td>2.</td>
-                    <td>Clean database</td>
+                    <td class="d-flex ">Update software <i class="bi bi-info-circle-fill  ms-auto p-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></td>
                  
                   
                   </tr>
                   <tr>
                     <td>3.</td>
-                    <td>Cron job running</td>
+                    <td class="d-flex ">Update software <i class="bi bi-info-circle-fill  ms-auto p-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></td>
                   
                  
                   </tr>
-                  <tr>
-                    <td>4.</td>
-                    <td>Fix and squish bugs</td>
                  
-                  
-                  </tr>
                 </tbody>
               </table>
             </div>
             <!-- /.card-body -->
             <div class="card-footer clearfix">
               <ul class="pagination pagination-sm m-0 float-right">
-                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                <li class="page-item"><a class="page-link" href="Tasignaciones">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="Tasignaciones">1</a></li>
+                <li class="page-item"><a class="page-link" href="Tasignaciones">2</a></li>
+                <li class="page-item"><a class="page-link" href="Tasignaciones">3</a></li>
+                <li class="page-item"><a class="page-link" href="Tasignaciones">&raquo;</a></li>
               </ul>
             </div>
           </div>
@@ -122,15 +117,59 @@
     </div><!-- /.container-fluid -->
 
   </section>
+
   <!-- /.content -->
-  <div class="container">
+  <div id="container" class="d-flex align-items-end flex-column bd-highlight mb-3" style="height: 250px;">
     <div class="row">
       
     </div>
-    <button class="btn btn-success">Guardar</button>
+        <div class="mt-auto p-2 bd-highlight">
+        <button class="btn btn-success" type="button">Guardar</button>
+        </div>
   </div>
- 
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+           
+
+        <div class="mb-3 row">
+          
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+       
+          
+        </div>
+
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Guardar</button>
+     
+      </div>
+    </div>
+  </div>
 </div>
+     
+</div>
+
+
 
 <!--
       <table style="height: 100px;">
@@ -145,4 +184,13 @@
         </tr>
       </tbody>
     </table>
+-->
+
+<!--Ejemplo de posicionamiento-->
+<!--
+  <div class="d-flex align-items-end flex-column bd-highlight mb-3" style="height: 200px;">
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="p-2 bd-highlight">Flex item</div>
+    <div class="mt-auto p-2 bd-highlight">Flex item</div>
+  </div>
 -->
