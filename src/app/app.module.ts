@@ -35,6 +35,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { IniciativasComponent } from './iniciativas/iniciativas.component';
+import { CsnasignacionesComponent } from './csnasignaciones/csnasignaciones.component';
+
 
 
 const routes: Routes=[
@@ -69,7 +71,12 @@ const routes: Routes=[
   {
     path:'iniciativas',
     component: IniciativasComponent
+  },
+  {
+    path:'Casignaciones',
+    component: CsnasignacionesComponent
   }
+
  
 
 ];
@@ -89,6 +96,8 @@ const routes: Routes=[
     TableColaboradoresComponent,
     TableIniciativasComponent,
     IniciativasComponent,
+    CsnasignacionesComponent,
+
    
   ],
   imports: [
