@@ -1,0 +1,145 @@
+<div class="grid-container">
+  <span><h1 class="mat-h1">ASIGNACIONES</h1></span> 
+ 
+             <div class="container" >
+               <div class="row">
+                 <div class="col order-last">
+                     <div class="input-container">
+                       <input type="text" id="search" placeholder="Buscar" ><i class="bi bi-search" id="buscar"></i>
+                     </div>
+                 </div>
+            
+                 <div class="col order-first">
+                 
+                 <button id="btn-agregar" class="btn btn-primary" onclick="location='Tasignaciones'"><i class="bi bi-plus-circle"></i> ASIGNAR</button> 
+                 </div>
+                 <div class="col order-first">
+                  
+                  <select class="select2 btn-primary">
+                    <option selected>ESTATUS</option>
+                    <option value="1">ASIGNADO</option>
+                    <option value="2">NO ASIGNADO</option>
+                  </select>
+       
+                 </div>
+             
+               </div>
+             </div>
+        
+     
+ 
+   <mat-grid-list cols="1">
+     <mat-grid-tile>
+       
+      
+       <mat-card class="dashboard-card">
+ 
+     <!--  <input type="search" style="width: 20%;" > <i class="bi bi-search"></i>-->  
+     
+ 
+     
+ 
+         <table class="table table-striped">
+           <thead>
+             <tr >
+               <th scope="col">#</th>
+               <th scope="col">ID</th>
+               <th scope="col">Nombre Iniciativas</th>
+        
+             </tr>
+           </thead>
+           <tbody>
+             
+             <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+               <th scope="row">1</th>
+               <td>001</td>
+               <td>INICIATIVA </td>
+           
+             </tr>
+           
+
+
+           </tbody>
+ 
+ 
+ 
+         </table>
+         <!-- Button trigger modal -->
+ 
+      
+         
+         <!-- Modal -->
+         
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false">
+           <div class="modal-dialog modal-lg modal-dialog-centered">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">INICIATIVA UNO</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <!-- Contenido de modal en acordion Registro-->
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputSolicitante" class="form-label">Solicitante</label>
+                      <input type="text" class="form-control" id="solicitante">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputFechai" class="form-label">Fecha inicio</label>
+                      <input type="date" class="form-control" id="fechai">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputFechaf" class="form-label">Fecha fin</label>
+                      <input type="date" class="form-control" id="fechaf">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPorcentaje" class="form-label">Porcentaje</label>
+                      <input type="text" class="form-control" id="porcentaje">
+                    </div>
+                   
+              
+                  </form>
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Num. Empleado</th>
+                                  <th scope="col">Nombre</th>
+                                  <th scope="col">Centro</th>
+                                  <th scope="col">Skills</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>90304632</td>
+                                  <td>Aquiles</td>
+                                  <td>Credito y cobranza</td>
+                                  <td>Angular </td>
+                                </tr>
+                               
+                              </tbody>
+                            </table>
+              
+                 
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                 <button type="button" class="btn btn-primary">Descargar</button>
+              
+               </div>
+             </div>
+           </div>
+         </div>
+         
+         
+         
+         
+         
+       </mat-card>
+     </mat-grid-tile>
+   </mat-grid-list>
+ 
+ 
+ </div>
+ 
