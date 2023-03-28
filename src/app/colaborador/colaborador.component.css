@@ -19,3 +19,12 @@
 .dashboard-card-content {
   text-align: center;
 }
+input:valid,
+textarea:valid {
+    background: hsl(103, 62%, 90%);
+}
+
+input:invalid,
+textarea:invalid {
+    
+}
